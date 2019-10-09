@@ -1,4 +1,4 @@
-from hangman import Game
+from hangman.game import Game
 
 
 def test_easy_win():
