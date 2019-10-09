@@ -35,7 +35,7 @@ class Game:
                 else:
                     tries += 1
 
-                    print("Missed, mistake " + tries + "out of " + self.max_tries + ".")
+                    print("Missed, mistake " + str(tries) + "out of " + str(self.max_tries) + ".")
 
                 print("\nThe word: " + ''.join(current_word) + "\n")
                 if not '*' in current_word:
