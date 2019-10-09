@@ -10,7 +10,6 @@ def test_easy_win():
     result = game.start()
 
     assert result
-    assert game.current_word == 'win'
 
 test_easy_win()
 
