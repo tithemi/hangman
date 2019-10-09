@@ -6,7 +6,7 @@ import sys
 class Game:
     def __init__(self, dict_path='hangman/default_dict.txt', max_tries=5):
         self.words = [line.rstrip('\n') for line in open(dict_path)]
-        self.initial_word = random.choice(words)
+        self.initial_word = random.choice(self.words)
         self.letters = np.array(list(self.initial_word))
         self.max_tries = max_tries
         self.input_stream = sys.stdin
