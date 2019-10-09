@@ -6,7 +6,7 @@ def test_easy_win():
     """
     game = Game()
     game.set_dict(['test'])
-    game.input_stream(['t', 'e', 's', 't'])
+    game.input_stream = ['t', 'e', 's', 't']
     result = game.start()
 
     assert result
