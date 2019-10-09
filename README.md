@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/tithemi/hangman.svg?branch=master)](https://travis-ci.org/tithemi/hangman)
+[![codecov](https://codecov.io/gh/tithemi/hangman/branch/master/graph/badge.svg)](https://codecov.io/gh/tithemi/hangman)
+
 # hangman
 PPPoSD homework #2
 
