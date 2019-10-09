@@ -1,7 +1,7 @@
-import pandas as pd
+import sys
 import random
 import numpy as np
-import sys
+
 
 class Game:
     def __init__(self, dict_path='hangman/default_dict.txt', max_tries=5):
@@ -14,6 +14,9 @@ class Game:
 
     def set_dict(self, wordlist):
         self.words = wordlist
+        self.initial_word = random.choice(self.words)
+        self.letters = np.array(list(self.initial_word))
+        self.current_word = np.array(list('*' * len(self.initial_word)))
 
     def start(self):
         tries = 0
@@ -35,13 +38,13 @@ class Game:
                 else:
                     tries += 1
 
-                    print("Missed, mistake " + str(tries) + "out of " + str(self.max_tries) + ".")
+                    print("Missed, mistake " + str(tries) +
+                          "out of " + str(self.max_tries) + ".")
 
                 print("\nThe word: " + ''.join(current_word) + "\n")
-                if not '*' in current_word:
+                if '*' not in current_word:
                     print('You won!')
                     return True
 
         print('You lost!')
         return False
-
