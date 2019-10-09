@@ -8,7 +8,7 @@ setup(
     name="hangman",
     version="0.0.0",
     author="Elizaveta Korneeva",
-    author_email="elisakorn@yandex.ru",
+    author_email="elisavetinaaa@gmail.com",
     url="https://github.com/tithemi/hangman",
     license="MIT",
     packages=[
