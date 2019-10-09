@@ -4,9 +4,8 @@ import numpy as np
 import sys
 
 class Game:
-    def __init__(self, dict_path='hangman/default_dict.csv', max_tries=5):
-        words = pd.read_csv(dict_path)
-        self.words = list(words[words.columns[0]])
+    def __init__(self, dict_path='hangman/default_dict.txt', max_tries=5):
+        self.words = [line.rstrip('\n') for line in open(dict_path)]
         self.initial_word = random.choice(words)
         self.letters = np.array(list(self.initial_word))
         self.max_tries = max_tries
