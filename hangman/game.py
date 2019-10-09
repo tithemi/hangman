@@ -2,6 +2,7 @@ import sys
 import random
 import numpy as np
 
+
 class Game:
     def __init__(self, dict_path='hangman/default_dict.txt', max_tries=5):
         self.words = [line.rstrip('\n') for line in open(dict_path)]
@@ -37,7 +38,7 @@ class Game:
                 else:
                     tries += 1
 
-                    print("Missed, mistake " + str(tries) +\
+                    print("Missed, mistake " + str(tries) +
                             "out of " + str(self.max_tries) + ".")
 
                 print("\nThe word: " + ''.join(current_word) + "\n")
