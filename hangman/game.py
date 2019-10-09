@@ -13,6 +13,9 @@ class Game:
 
     def set_dict(self, wordlist):
         self.words = wordlist
+        self.initial_word = random.choice(self.words)
+        self.letters = np.array(list(self.initial_word))
+        self.current_word = np.array(list('*' * len(self.initial_word)))
 
     def start(self):
         tries = 0
