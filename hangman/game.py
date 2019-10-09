@@ -1,6 +1,6 @@
+import sys
 import random
 import numpy as np
-import sys
 
 class Game:
     def __init__(self, dict_path='hangman/default_dict.txt', max_tries=5):
