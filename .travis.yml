@@ -7,4 +7,3 @@ script:
   - ./setup.py test
 after_success:
   - codecov
-  
