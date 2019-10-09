@@ -4,7 +4,7 @@ import numpy as np
 import sys
 
 class Game:
-    def __init__(self, dict_path='default_dict.csv', max_tries=5):
+    def __init__(self, dict_path='hangman/default_dict.csv', max_tries=5):
         words = pd.read_csv(dict_path)
         self.words = list(words[words.columns[0]])
         self.initial_word = random.choice(words)
