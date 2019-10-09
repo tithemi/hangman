@@ -1,5 +1,6 @@
 import argparse
-from game import Game
+
+from hangman.game import Game
 
 
 def main():
