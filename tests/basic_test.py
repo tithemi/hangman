@@ -12,5 +12,5 @@ def test_easy_win():
 
     assert result
 
-    
+
 test_easy_win()
